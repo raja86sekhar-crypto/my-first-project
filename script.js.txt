@@ -1,4 +1,9 @@
-// script.js
-function showMessage() {
-  alert("Hello! Your GitHub Page is working 🎉");
+function updateHeader() {
+  const category = document.getElementById("category").value;
+  const header = document.getElementById("formHeader");
+  if (category === "driver") {
+    header.textContent = "Driver Salary";
+  } else {
+    header.textContent = "Office Expense Reimbursement Claim";
+  }
 }
