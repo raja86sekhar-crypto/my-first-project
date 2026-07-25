@@ -16,5 +16,6 @@ function updateForm() {
 }
 
 function printPDF() {
-  window.print(); // Opens browser print dialog, user can save as PDF
+  // Opens browser print dialog → user can save as PDF
+  window.print();
 }

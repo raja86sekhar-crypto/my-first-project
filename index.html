@@ -28,10 +28,10 @@
     <input type="text" id="invoice" name="invoice" maxlength="40" pattern="[A-Za-z0-9]+" required>
     <br><br>
 
-    <!-- Driver Name (only for Driver Salary) -->
+    <!-- Driver Salary Fields -->
     <div id="driverFields">
       <label for="driverName">Driver Name:</label>
-      <input type="text" id="driverName" name="driverName">
+      <input type="text" id="driverName" name="driverName" required>
       <br><br>
 
       <label for="month">Salary Month:</label>
@@ -43,7 +43,7 @@
       <br><br>
     </div>
 
-    <!-- Car Maintenance Fields (only for Car Maintenance) -->
+    <!-- Car Maintenance Fields -->
     <div id="carFields" style="display:none;">
       <label for="service">Service Type:</label>
       <input type="text" id="service" name="service" placeholder="e.g. Oil Change">
@@ -64,6 +64,7 @@
     </select>
     <br><br>
 
+    <!-- Submit / Print -->
     <button type="button" onclick="printPDF()">Submit / Print</button>
   </form>
 
