@@ -1,0 +1,4 @@
+// script.js
+function showMessage() {
+  alert("Hello! Your GitHub Page is working 🎉");
+}
