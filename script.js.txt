@@ -1,9 +1,20 @@
-function updateHeader() {
+function updateForm() {
   const category = document.getElementById("category").value;
   const header = document.getElementById("formHeader");
+  const driverFields = document.getElementById("driverFields");
+  const carFields = document.getElementById("carFields");
+
   if (category === "driver") {
     header.textContent = "Driver Salary";
+    driverFields.style.display = "block";
+    carFields.style.display = "none";
   } else {
-    header.textContent = "Office Expense Reimbursement Claim";
+    header.textContent = "Car Maintenance";
+    driverFields.style.display = "none";
+    carFields.style.display = "block";
   }
+}
+
+function printPDF() {
+  window.print(); // Opens browser print dialog, user can save as PDF
 }
